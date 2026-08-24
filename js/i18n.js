@@ -5,7 +5,7 @@
   document.querySelector('.site-header')?.append(labels);
   if (!polish && localStorage.getItem('mareek-language') === 'pl') location.href = 'pl/index.html';
   if (!polish && !localStorage.getItem('mareek-language') && navigator.language.toLowerCase().startsWith('pl')) { localStorage.setItem('mareek-language', 'pl'); location.href = 'pl/index.html'; }
-  labels.addEventListener('click', () => localStorage.setItem('mareek-language', polish ? 'pl' : 'en'));
+  labels.addEventListener('click', (event) => { const link = event.target.closest('a'); if (link) localStorage.setItem('mareek-language', link.href.includes('/pl/') ? 'pl' : 'en'); });
   if (!polish) return;
   const t = {
     'Focus':'Tematyka','Videos':'Filmy','Contact':'Kontakt','Back to home':'Powrót','Explore the channel':'Przejdź do kanału','Watch selected videos':'Oglądaj wybrane filmy','Ultrawide Gaming':'Gaming Ultrawide','Performance Tests':'Testy wydajności','Indie Game Dev':'Tworzenie gier indie','Enter the kitchen ↗':'Poznaj grę ↗','Selected videos.':'Wybrane filmy.','Selected shorts.':'Wybrane shorty.','Start a conversation ↗':'Napisz do mnie ↗',
