@@ -3,4 +3,5 @@
 .contact h2 span{color:#b7a800}.contact-copy{max-width:520px}.contact-copy p{font-size:16px}.contact-copy a:not(.button){color:#807500;text-decoration:underline}.disclosure{color:#777;font-size:12px!important}.contact .button{margin-top:12px}
 @media(max-width:800px){.contact{grid-template-columns:1fr;gap:35px}}
 :is(.contact,.shorts) .eyebrow{font-size:12px;letter-spacing:.16em;color:#a39400}
+.intro .eyebrow{font-size:12px;letter-spacing:.16em;color:#a39400}
 :focus-visible{outline:3px solid var(--yellow);outline-offset:4px}.feature-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,10,.9),rgba(11,11,10,.35) 70%,rgba(11,11,10,.55));pointer-events:none}.feature-image>div{z-index:1}.feature-image>img{opacity:.6}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
