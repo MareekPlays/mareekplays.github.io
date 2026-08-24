@@ -1,3 +1,4 @@
+:root{--white:#efeee8}
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:end;background:var(--white);color:var(--black)}
 .contact h2 span{color:#b7a800}.contact-copy{max-width:520px}.contact-copy p{font-size:16px}.contact-copy a:not(.button){color:#807500;text-decoration:underline}.disclosure{color:#777;font-size:12px!important}.contact .button{margin-top:12px}
 @media(max-width:800px){.contact{grid-template-columns:1fr;gap:35px}}
