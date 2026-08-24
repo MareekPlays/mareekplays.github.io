@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mareekplays.github.io/sitemap.xml
+Sitemap: https://mareekplays.com/sitemap.xml
