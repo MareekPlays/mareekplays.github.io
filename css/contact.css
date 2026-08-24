@@ -4,4 +4,5 @@
 @media(max-width:800px){.contact{grid-template-columns:1fr;gap:35px}}
 :is(.contact,.shorts) .eyebrow{font-size:12px;letter-spacing:.16em;color:#c7b300}
 .intro .eyebrow{font-size:12px;letter-spacing:.16em;color:#c7b300}
+.language-switch{display:flex;gap:10px;align-items:center;margin-left:auto;margin-right:20px;font-size:12px;font-weight:700}.language-switch a{color:var(--muted)}.language-switch strong{color:var(--yellow)}
 :focus-visible{outline:3px solid var(--yellow);outline-offset:4px}.feature-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,10,.9),rgba(11,11,10,.35) 70%,rgba(11,11,10,.55));pointer-events:none}.feature-image>div{z-index:1}.feature-image>img{opacity:.6}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
