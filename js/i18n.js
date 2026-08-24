@@ -1,7 +1,10 @@
 (() => {
   const polish = location.pathname.includes('/pl/');
+  const gamePage = location.pathname.includes('kebab-shooter');
+  const englishTarget = gamePage ? (polish ? '../kebab-shooter.html' : 'kebab-shooter.html') : (polish ? '../index.html' : 'index.html');
+  const polishTarget = gamePage ? (polish ? 'kebab-shooter.html' : 'pl/kebab-shooter.html') : (polish ? 'index.html' : 'pl/index.html');
   const labels = document.createElement('div'); labels.className = 'language-switch';
-  labels.innerHTML = polish ? '<a href="../index.html">🇬🇧 EN</a><strong>🇵🇱 PL</strong>' : '<strong>🇬🇧 EN</strong><a href="pl/index.html">🇵🇱 PL</a>';
+  labels.innerHTML = polish ? `<a href="${englishTarget}">🇬🇧 EN</a><strong>🇵🇱 PL</strong>` : `<strong>🇬🇧 EN</strong><a href="${polishTarget}">🇵🇱 PL</a>`;
   document.querySelector('.site-header')?.append(labels);
   if (!polish && localStorage.getItem('mareek-language') === 'pl') location.href = 'pl/index.html';
   if (!polish && !localStorage.getItem('mareek-language') && navigator.language.toLowerCase().startsWith('pl')) { localStorage.setItem('mareek-language', 'pl'); location.href = 'pl/index.html'; }
