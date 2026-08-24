@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mareekplays.github.io/sitemap.xml
